@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>RedItel</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Bebas+Neue&family=Pacifico&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Sacramento&display=swap');
+    </style>
+<body>
+    <div id="chat_screen" onunload="opening()">
+        <div id="saida" onclick="leave()">
+            <i class="bi bi-arrow-left"></i>
+        </div>
+        <header>
+            <div id="dados_container">
+                <div id="ft">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <p> User</p>
+            </div>
+            <button id="dots" popovertarget="pop" popovertargetaction="show">
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+            <div id="user_info">
+                <div id="intituto">
+                    <h5>INSTITUTO DE TELECOMUNICAÇÕES</h5>
+                    </section>
+                </div>
+                <article>
+                    <section>
+                        <p><strong>Processo</strong>:</p>
+                        <p><strong>Curso</strong>:</p>
+                        <p><strong>Turma</strong>:</p>
+                        <p><strong>Idade</strong>:</p>
+                    </section>
+                    <section>
+                        <p><strong>Email</strong>:</p>
+                    </section>
+                    <section>
+                        <p><strong>Estado</strong>:</p>
+                    </section>
+                </article>
+            </div>
+        </header>
+        <article id="exibir_txt">
+                <div class="brilho">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+                <div class="brilho">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+                <div class="brilho">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+                <div class="brilho">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+                <div class="brilho">
+                    <span style="--i:1;"></span>
+                    <span style="--i:2;"></span>
+                    <span style="--i:3;"></span>
+                </div>
+
+                <article>
+                    <div id="txt_recebido"></div>
+                    <div id="txt_enviado"></div>
+                </article>
+        </article>
+        <article id="area_de_escrita">
+                <div id="inputs_container">
+                    <div id="terminal_de_entrada_container">
+                        <textarea type="text" class="terminal_de_entrada" placeholder="mensagem..."></textarea>
+                    </div>
+                </div>
+                <div id="enviar" onclick="send()">
+                    <button>
+                        <i class="bi bi-send" id="send"></i>
+                    </button>
+                </div>
+        </article>
+    </div>
+
+    <script src="main.js" ></script>
+   
+</body>
+</html>
